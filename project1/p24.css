@@ -1,0 +1,93 @@
+@import 'p20.css';
+
+.landmarks-hero {
+    height: 60vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                      url('images/bangalore-landmarks.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landmarks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.landmark-card {
+    background: var(--surface);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.landmark-card:hover {
+    transform: translateY(-10px);
+}
+
+.landmark-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.landmark-info {
+    padding: 2rem;
+}
+
+.landmark-info h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.landmark-info p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.landmark-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--text-tertiary);
+}
+
+.landmark-map {
+    padding: 4rem 2rem;
+    background: var(--surface-light);
+}
+
+.landmark-map h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        height: 400px;
+    }
+}

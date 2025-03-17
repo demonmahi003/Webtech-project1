@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery - Visual Journey Through Bangalore">
+    <title>Bangalore Gallery</title>
+    <link rel="stylesheet" href="p22.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Same navigation as p20.html -->
+        <nav class="main-nav">
+            <div class="logo">
+                <h1><a href="/">Discover<span class="accent-text">Bangalore</span></a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="p20.html">Home</a></li>
+                <li><a href="how-to-reach.html">How to Reach</a></li>
+                <li><a href="specialties.html">Specialties</a></li>
+                <li><a href="landmarks.html">Landmarks</a></li>
+                <li><a href="culture.html">Culture</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-hero">
+            <h1>Photo Gallery</h1>
+            <p>Visual stories of Bangalore's beauty and culture</p>
+        </section>
+
+        <section class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="landmarks">Landmarks</button>
+            <button class="filter-btn" data-filter="culture">Culture</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+        </section>
+
+        <section class="gallery-grid">
+            <!-- Landmarks -->
+            <div class="gallery-item" data-category="landmarks">
+                <img src="images/vidhana-soudha.jpg" alt="Vidhana Soudha">
+                <div class="image-overlay">
+                    <h3>Vidhana Soudha</h3>
+                    <p>State Legislature Building</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landmarks">
+                <img src="images/bangalore-palace.jpg" alt="Bangalore Palace">
+                <div class="image-overlay">
+                    <h3>Bangalore Palace</h3>
+                    <p>Tudor-style architecture from 1887</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landmarks">
+                <img src="images/cubbon-park.jpg" alt="Cubbon Park">
+                <div class="image-overlay">
+                    <h3>Cubbon Park</h3>
+                    <p>The green heart of Bangalore</p>
+                </div>
+            </div>
+
+            <!-- Culture -->
+            <div class="gallery-item" data-category="culture">
+                <img src="images/karaga-festival.jpg" alt="Karaga Festival">
+                <div class="image-overlay">
+                    <h3>Karaga Festival</h3>
+                    <p>Ancient festival of the Thigala community</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="culture">
+                <img src="images/classical-dance.jpg" alt="Classical Dance Performance">
+                <div class="image-overlay">
+                    <h3>Classical Dance</h3>
+                    <p>Traditional Bharatanatyam performance</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="culture">
+                <img src="images/silk-sarees.jpg" alt="Silk Sarees">
+                <div class="image-overlay">
+                    <h3>Silk Sarees</h3>
+                    <p>Famous Bangalore silk craftsmanship</p>
+                </div>
+            </div>
+
+            <!-- Food -->
+            <div class="gallery-item" data-category="food">
+                <img src="images/cuisine.jpg" alt="Masala Dosa">
+                <div class="image-overlay">
+                    <h3>Masala Dosa</h3>
+                    <p>Iconic South Indian breakfast</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="food">
+                <img src="images/filter-coffee.jpg" alt="Filter Coffee">
+                <div class="image-overlay">
+                    <h3>Filter Coffee</h3>
+                    <p>Traditional South Indian coffee</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="food">
+                <img src="images/street-food.jpg" alt="Street Food">
+                <div class="image-overlay">
+                    <h3>Street Food</h3>
+                    <p>Vibrant food scene at VV Puram</p>
+                </div>
+            </div>
+
+            <!-- Nature -->
+            <div class="gallery-item" data-category="nature">
+                <img src="images/lalbagh.jpg" alt="Lalbagh Botanical Garden">
+                <div class="image-overlay">
+                    <h3>Lalbagh Garden</h3>
+                    <p>Historic botanical garden</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="images/bannerghatta.jpg" alt="Bannerghatta National Park">
+                <div class="image-overlay">
+                    <h3>Bannerghatta Park</h3>
+                    <p>Wildlife sanctuary near the city</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="nature">
+                <img src="images/sunset-ulsoor.jpg" alt="Ulsoor Lake Sunset">
+                <div class="image-overlay">
+                    <h3>Ulsoor Lake</h3>
+                    <p>Serene sunset views</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Modal for Image Preview -->
+        <div class="gallery-modal">
+            <span class="modal-close">&times;</span>
+            <img class="modal-img" src="" alt="Gallery Preview">
+            <div class="modal-caption"></div>
+        </div>
+    </main>
+
+    <!-- Same footer as p20.html -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="landmarks.html">Famous Landmarks</a></li>
+                    <li><a href="specialties.html">Local Specialties</a></li>
+                    <li><a href="culture.html">Culture & Heritage</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Tourism Department</p>
+                <p>Email: tourism@bangalore.gov.in</p>
+                <p>Emergency: 112</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Discover Bangalore. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="p22.js"></script>
+</body>
+</html>
